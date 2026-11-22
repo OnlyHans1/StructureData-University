@@ -98,18 +98,23 @@ struct elmAsprak {
 struct elmRektor {
     Rektor info;
     address_rektor next;
+    address_warek firstWarek;
 };
 
 struct elmDekan {
     Dekan info;
     address_dekan next;
     address_dekan prev;
+    address_kaprodi firstKaprodi;
+    address_korlab firstKorlab;
 };
 
 struct elmDosen {
     Dosen info;
     address_dosen next;
     address_dosen prev;
+    address_aslab firstAslab;
+    address_asprak firstAsprak;
 };
 
 struct ListRektor {
